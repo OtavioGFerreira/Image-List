@@ -1,0 +1,59 @@
+ul{
+  background-color: hsl(218, 23%, 16%);;
+}
+
+.lista {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  margin: 10px;
+  height: 431px;
+  min-width: 335px;
+  border: solid white 2px;
+}
+.item h1 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+.item p {
+  font-weight: 300;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-bottom: 45px;
+}
+
+.rome {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/rome.png);
+}
+.boat {
+  background: url(images/boat-at-sea.png);
+}
+.sand {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/sand-and-sea.png);
+}
+.starry {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/starry-night.png);
+}
+
+@media (max-width: 1430px) {
+  .lista {
+    flex-direction: column;
+    min-height: 1820px;
+  }
+  .item {
+    margin: 10px;
+  }
+}
